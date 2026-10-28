@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop Grid</title>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{background:#60767a;font-family:sans-serif;color:#fff;display:flex;justify-content:center;align-items:center;min-height:100vh;padding:20px}
+    .container{max-width:1000px;width:100%}
+    h1{font-size:28px;margin-bottom:20px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:25px}
+    .card img{width:100%;height:320px;object-fit:cover;border-radius:2px;margin-bottom:10px}
+    h2{font-size:16px;font-weight:700;margin-bottom:4px}
+    p{font-size:14px;color:#d1dcdb}
+    .btn-wrap{display:flex;justify-content:center}
+    button{background:#f2f0f8;color:#222;padding:12px 36px;border:none;border-radius:2px;font-size:15px;font-weight:600;cursor:pointer}
+    @media(max-width:768px){.grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Shop</h1>
+    <div class="grid">
+      <div class="card">
+        <img src="jade_roller.jpg" alt="Jade Roller">
+        <h2>Jade Roller</h2><p>$20.00</p>
+      </div>
+      <div class="card">
+        <img src="spice_cleanse.jpg" alt="Spice Cleanse Set">
+        <h2>Spice Cleanse Set</h2><p>$35.00</p>
+      </div>
+      <div class="card">
+        <img src="magnesium.jpg" alt="Magnesium+ Supplements">
+        <h2>Magnesium+ Supplements</h2><p>from $38.00</p>
+      </div>
+    </div>
+    <div class="btn-wrap"><button>Shop Now</button></div>
+  </div>
+</body>
+</html>
